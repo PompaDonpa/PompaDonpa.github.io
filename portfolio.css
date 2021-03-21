@@ -6,34 +6,28 @@ body {
   padding: 5px 70px 5px 50px;
   background: #152d50;
   color: white;
-  /* display: grid;
-  grid-template-rows: auto; */
+  display: inline;
+
 }
 
-#top {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 80px;
-}
 
 #DN {
-  display: flex;
-  align-self: flex-end;
-  position: relative;
+
+  display: block;
+ position: relative;
+  opacity: 0.35;
   z-index: -1;
   border-radius: 50%;
-  width: 300px;
+  width: 250px;
   border-style: solid;
   border-color: transparent;
-
-  transform: perspective(75em) rotateX(15deg);
-  box-shadow: rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
-    rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+  
 }
 
-nav {
-  margin-left: -50px;
-  margin-right: -70px;
+
+
+#nav {
+  width: 100%;
   position: relative;
   z-index: 1;
   display: flex;
@@ -56,6 +50,12 @@ nav {
   display: flex;
   align-self: center;
   font-size: 20px;
+ 
+}
+
+.nav:hover{
+  cursor: pointer; 
+  text-decoration: underline;
 }
 
 .navigator {
@@ -72,7 +72,9 @@ h1 {
 .active {
   display: grid;
   grid-template-rows: 140px auto 140px;
+
 }
+
 
 .three {
   display: flex;
@@ -264,6 +266,8 @@ h2 {
   grid-template-rows: repeat(2, minmax(auto, 400px));
   gap: 40px;
 }
+
+
 .more {
   width: 420px;
   height: 400px;
@@ -272,14 +276,19 @@ h2 {
   border-radius: 10px;
 }
 
-.more:hover {
+.more:not(:hover) {
+  background-color: #1122408a;
+}
+.more:hover{
   transform: translateY(-10px);
+
 }
 
 #skills {
   display: flex;
   justify-content: space-evenly;
   align-content: flex-start;
+  /* width: 97%; */
 }
 
 #category {
@@ -359,23 +368,20 @@ h2 {
 
 @media only screen and (max-width: 375px) {
   body {
-    display: inline-block;
-    width: 375px;
+    display: inline;
+    max-width: 375px;
     padding: 5px 2px 5px 2px;
   }
 
-  nav {
-    width: 375px;
-    margin-left: 0px;
+  #nav {
+    width: 100%;
+    margin-left: -3px;
     margin-right: 0px;
   }
 
-  div#rolling-menu {
-    width: 345px;
-    flex-direction: column;
-    justify-content: space-evenly;
+  section{
+    width: 95%;
   }
-
   .navigator {
     display: flex;
   }
@@ -384,26 +390,33 @@ h2 {
     display: none;
   }
 
+#DN{
+  width: 150px;
+  align-self: flex-start;
+  transform: translateX(75px);
+
+}
+
   .projects-div {
-    width: 345px;
+    width: 330px;
   }
 
   .projects-divReverse {
-    width: 345px;
+    width: 330px;
   }
 
   .snowman {
     transform: translateY(20px);
-    width: 345px;
+    width: 330px;
     height: 265px;
   }
   .more {
-    width: 100%;
+
     height: 400px;
   }
 
   .three {
-    margin: 2px;
+    margin: 0px;
     padding: 14px;
   }
 
@@ -417,30 +430,30 @@ h2 {
   }
   .active {
     display: inline;
-    width: 345px;
   }
 
   .three {
-    width: 345px;
-  }
-
-  .section {
-    width: 345px;
+    max-width: 330px;
+    margin-left:15px;
   }
 
   .subTitle {
-    margin: 2px 12px 4px 2px;
+    padding: 2px 12px 4px 2px;
+    margin-right: 0px;
   }
   .proTitle {
-    margin: 2px 12px 4px 2px;
+    padding: 2px 12px 4px 2px;
+    margin-right: 0px;
   }
   .gameText {
-    margin: 2px 12px 4px 2px;
+    padding: 2px 12px 4px 2px;
+    margin-right: 0px;
   }
 
   .more-desc {
     min-width: 325px;
     min-height: 216px;
+    margin: 20px 0px 10px 10px;
   }
 
   .gitLive {
@@ -462,12 +475,17 @@ h2 {
     align-self: center;
   }
 
+#top{
+  width: 374px;
+  margin: 0px;
+}
+
   #traderMedia {
     transform: translateY(-135px);
   }
 
   #snowmanForm {
-    min-width: 345px;
+    min-width: 330px;
   }
   #snowmanFormReverse {
     grid-area: 1 / 1 / 2 / 11;
@@ -477,11 +495,11 @@ h2 {
   }
 
   #snowmanFormMedia {
-    width: 345px;
+    width: 330px;
   }
 
   #moreGit {
-    grid-template-columns: 345px;
+    grid-template-columns: 330px;
     grid-template-rows: repeat(4, minmax(auto, 400px));
   }
 
@@ -490,13 +508,50 @@ h2 {
   }
 
   #contacts {
-    /* width: 345; */
     padding: 2px 2px 2px;
   }
 
   #divfooter {
-    width: 345px;
+    width: 330px;
     display: flex;
     flex-direction: column;
+  }
+
+  #rolling-menu {
+    margin-right: 0px;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+
+  #top{
+    width: 100%;
+  }
+
+  .three{
+    width: 790px;
+  }
+
+  .more{
+    width: 330px;
+
+  }
+  .icon{
+    width: 56px;
+    height: 56px;
+  }
+
+  #nav{
+    width: 100%;
+    justify-content: space-between;
+     margin-left: 28px;
+  
+  }
+
+  .nav{
+    align-self: center;
+    margin-right: 30px;
   }
 }
