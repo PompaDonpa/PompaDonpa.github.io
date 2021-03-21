@@ -50,7 +50,7 @@ For more inspiration, here are some personal sites from alums!
 
 For this project, we will give you a blank Trello board and you will be responsible for creating cards this time.
 
-Start by copying [this starter Trello board](https://trello.com/b/2QmZVinq/daniel-naranjo-developer-at-pursuit-71).
+Start by copying [this starter Trello board](https://trello.com/b/tTFpk77m/fsw-personal-site-project).
 
 - Instructions here: [How to copy a Trello board](https://help.trello.com/article/802-copying-cards-lists-or-boards#:~:text=Open%20the%20board's%20menu%2C%20then,it%20to%20your%20new%20board.)
 - Give your board a title with your name and class number (7.2, 8.3, etc...)
@@ -75,7 +75,8 @@ Also notice that you can set **DEADLINES** for a card, which may help you manage
 
 When you are done, replace the link below with the link to your Trello board:
 
-[Replace this link with the link to your board](https://trello.com/b/tTFpk77m/fsw-personal-site-project)
+[Replace this link with the link to your board](https://trello.com/b/2QmZVinq/daniel-naranjo-developer-at-pursuit-71)
+
 
 ## User Stories
 
