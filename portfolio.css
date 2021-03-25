@@ -367,6 +367,7 @@ h2 {
       ===========================================================         */
 
 @media only screen and (max-width: 375px) {
+  /*Lot's of text flows off screen at a variety of screen widths under 375 px and under 812px - Might need to revisit these media queries!*/
   body {
     display: inline;
     max-width: 375px;
@@ -382,6 +383,7 @@ h2 {
   section{
     width: 95%;
   }
+  /* I like switching to a hamburger menu on mobile! But nothing happens when I click... */
   .navigator {
     display: flex;
   }
