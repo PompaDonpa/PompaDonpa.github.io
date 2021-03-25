@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<!-- 
+
+Things to consider as you write HTML in the future:
+- Use semantic html tags whenever possible! Write fewer div and span tags, use tags like
+  header, main, article, nav, ul, etc.
+- If you are writing separate .css files, put all your styles in there! Try not to split them across HTML and CSS files.
+- Group related parts of your web apps within the same parent tag!
+
+-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,6 +20,10 @@
   </head>
 
   <body>
+    <!--
+      Try using semantic HTML tags when appropriate. Instead of a div, what tags could tell me more about
+      what part of your web application this code describes.
+    -->
     <div id="top">
       <div id='nav'>
         <div class="top-icon">
@@ -18,6 +31,7 @@
         <span class="nav"><h1>DANIEL NARANJO</h1></span>
         <div class="top-icon"></div>
 
+        <!--    Why did you choose spans? Are there other tags more appropriate for nav links?    -->
         <span class="nav" href="about-me">ABOUT</span>
         <span class="nav" href="projects">PROJECTS</span>
         <span class="nav" href="skill">SKILLS</span>
@@ -32,10 +46,11 @@
           ||                       ABOUT ME                            ||
             ===========================================================         -->
 
-
+        <!--     What is this div.three used for? Is it necessary? For tags with no content, I'd recommend writing them on a single line.     -->
         <div class="three">
           </div>
           <div class="three section" id="about-me">
+            <!--      consider nesting the content inside div#about-me the same level as this comment.      -->
           <img src="./images/DanielN.jpeg" alt="Daniel Naranjo" id='DN'>    
           <h2>a FullStack Web Developer based in New York</h2>
           <p id="description">
@@ -47,6 +62,10 @@
           </p>
         </div>
 
+        <!--     
+          Why did you decide to place the contact me button outside the #about-me section?
+          Because of the flow of your site, it feels to me like its a part of the about me section.
+        -->
         <div class="three">
           <button class="niceButton"><strong>Contact me</strong></button>
           <div class="line"></div>
@@ -91,6 +110,7 @@
           </section>
 
           <br />
+          <!--    Put these styling rules in your css file! Easier for both of us if we know all the styling is in .css files!!!    -->
           <div style="height: 80px"></div>
           <br />
 
