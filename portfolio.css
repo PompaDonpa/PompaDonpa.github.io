@@ -65,7 +65,7 @@ body {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 64px;
   color: white;
 }
 
@@ -85,13 +85,13 @@ h1 {
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 48px;
   color: #dae1e7af;
   width: auto;
   align-self: flex-start;
 }
 
-#description {
+.description {
   font-size: 24px;
   color: #99a7b4af;
   text-align: justify;
@@ -122,7 +122,7 @@ h2 {
 
 .projects-div {
   display: grid;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 40% 60%;
 }
 
 .projects-divReverse {
@@ -137,20 +137,20 @@ h2 {
 .projects-divReverse:hover {
   transform: translateY(-10px);
 }
-#snowmanForm {
+#calculatorForm {
   z-index: -1;
-  min-width: 660px;
-  height: 400px;
+  width: 720px;
+  height: auto;
 }
 
-#snowmanFormReverse {
+#calculatorFormReverse {
   z-index: -1;
   width: auto;
   height: 400px;
   grid-area: 1 / 5 / 2 / 11;
 }
 
-#snowman-desc {
+#calculator-desc {
   display: grid;
   position: relative;
   z-index: 1;
@@ -196,7 +196,7 @@ h2 {
   padding: 10px;
 }
 
-.snowman {
+.calculator {
   width: 100%;
   height: 100%;
   align-self: auto;
@@ -205,8 +205,13 @@ h2 {
   vertical-align: middle;
 }
 
-.snowman:hover {
+.calculator:hover {
   transform: translateY(-10px);
+}
+.shell{
+  color: white;
+  text-align: center;
+  font-weight: 100;
 }
 
 .live {
@@ -260,13 +265,16 @@ h2 {
   color: #2afeb7;
 }
 
-#moreGit {
+.more-visible {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(2, minmax(auto, 400px));
   gap: 40px;
 }
 
+.more-invisible{
+  display: none;
+}
 
 .more {
   width: 420px;
@@ -285,11 +293,9 @@ h2 {
 }
 
 #skills {
-  display: flex;
-  justify-content: space-evenly;
-  align-content: flex-start;
-  /* width: 97%; */
+transform: translateX(-500px);
 }
+
 
 #category {
   align-self: center;
@@ -405,7 +411,7 @@ h2 {
     width: 330px;
   }
 
-  .snowman {
+  .calculator {
     transform: translateY(20px);
     width: 330px;
     height: 265px;

@@ -16,36 +16,29 @@ document.addEventListener('DOMContentLoaded', eve => {
 // |  Show Less Button  |
 //  ====================
 
-  const moreMore = document.getElementById('moreGit').innerHTML
 
-  let showMore = document.getElementById('show')
-  showMore.addEventListener('click', () => {
-    if (showMore.textContent === 'Show Less') {
-      showMore.textContent = 'Show More'
-      document.getElementById('moreGit').innerHTML = ''
-      document.getElementById('moreGit').setAttribute = ('display', 'grid')
-      console.log(document.getElementById('moreGit').attributes)
-    } else {
-      showMore.textContent = 'Show Less'
-      document.getElementById('moreGit').innerHTML = moreMore
-    }
-  })
+  // let showMore = document.getElementById('show')
+  // showMore.addEventListener('click', () => {
+  //   if (showMore.textContent === 'Show Less') {
+  //     showMore.textContent = 'Show More'
+  //     document.getElementById('moreGit').className = 'more-invisible'
+  //   } else {
+  //     showMore.textContent = 'Show Less'
+  //     document.getElementById('moreGit').className = 'more-visible'
+  //   }
+  // })
 
 //  ====================
 // |   GitHub & Live    |
 //  ====================
 
-  let linkSnowman = document.getElementById('linkSnowman')
-  linkSnowman.addEventListener('click', () => {
-    let location = linkSnowman.getAttribute('href')
-    window.open(location, '_blank')
-  })
 
-  let linkTrader = document.getElementById('linkTrader')
-  linkTrader.addEventListener('click', () => {
-    let location = linkTrader.getAttribute('href')
-    window.open(location, '_blank')
+document.querySelectorAll('.linkSites').forEach(spaner => {
+  spaner.addEventListener('click', () => {
+        window.open(spaner.getAttribute('href'), '_blank')
   })
+})
+
 
 //  ====================
 // |  Skills Selection  |
@@ -76,4 +69,9 @@ document.querySelectorAll('.footer-elem').forEach(contact => {
     window.open(contact.getAttribute('href'), '_blank')
   })
 })
+})
+
+
+document.querySelector("#contact-button").addEventListener('click',()=>{ 
+  window.open("#footer", '_self')
 })

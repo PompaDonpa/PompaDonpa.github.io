@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel Naranjo Dev at Pursuit 7.1</title>
+    <title>Daniel Naranjo Developer</title>
     <link rel="stylesheet" href="./portfolio.css" />
-    <link rel="icon" href="./images/dn-icon.svg" />
+    <link rel="icon" href="./images/favicon.ico" />
     <script src="./portfolio.js" defer></script>
   </head>
 
@@ -20,7 +20,7 @@
 
         <span class="nav" href="about-me">ABOUT</span>
         <span class="nav" href="projects">PROJECTS</span>
-        <span class="nav" href="skill">SKILLS</span>
+        <span class="nav" href="skills">SKILLS</span>
         <span class="nav" href="contacts">CONTACT</span>
 
         <div class="top-icon">
@@ -38,17 +38,32 @@
           <div class="three section" id="about-me">
           <img src="./images/DanielN.jpeg" alt="Daniel Naranjo" id='DN'>    
           <h2>a FullStack Web Developer based in New York</h2>
-          <p id="description">
-            I'm a problem-solving, creative Engineer & Designer. With a focus on
-            blockchain, AI, and trading. I care about technology and economics
-            applied on the creation of functional applications. I prioritize
-            freedom, and self development. In contrast, I enjoy walking my dog,
-            lifting weigths and explaining difficult concepts.
+          <p class="description">
+          Hey I'm Daniel, a FullStack Web Developer with a background in wholesale/retail logistics.
+          I am passionate about building software for small bussiness' to compete and scale in a digital economy
+          using strong technologies as Frameworks, API's, Cloud providers, PaaS, IaaS and Blockchain.
+          </p>  
+          <p class="description">
+          I'm a big fan of Machine Learning and Augmented Reality Websites, cinema4D, crypto and everything tech.
+          When not coding, I love to listening to podcasts, brew some coffee or walk my dog Rubio.
+          </p>  
+          <p class="description">
+          My goal is to improve my skills, learn and apply new open source technologies, develop the latest accesible 
+          tools using best practices.
+          </p> 
+          <p class="description">
+          On the frontend side, I started with HTML, CSS and JavaScript, now I find myselft constantly improving my work
+          using React, Material-UI, Three.js and BootStrap. 
+          </p>
+          <p class="description">
+          Backend wise, I deep dive into Express and Postgress. My next goal is implement Data in real time using MongoDB Atlas.
+          For deployment my allies are Netlify, Heroku, Jenkins, Docker, K8s, and AWS.
           </p>
         </div>
+        <br />
 
         <div class="three">
-          <button class="niceButton"><strong>Contact me</strong></button>
+          <button class="niceButton" id="contact-button"><strong>Contact me</strong></button>
           <div class="line"></div>
         </div>
 
@@ -60,32 +75,37 @@
         <div class="three section" id="projects">
           <h2>Projects</h2>
           <section class="projects-div">
-            <div id="snowmanForm">
-              <img src="./images/snowman.gif" alt="" class="snowman" />
+            <div id="calculatorForm">
+              <img src="./images/operations.gif" alt="Calculator App" class="calculator" />
             </div>
-            <div id="snowman-desc">
+            <div id="calculator-desc">
               <div>
                 <p class="subTitle">Featured Project</p>
-                <h2 class="proTitle">Snowman</h2>
+                <h2 class="proTitle">Calculator</h2>
                 <p class="gameText">
-                  The classic game of Snowman in shell command
+                  The classic calculator bootstraped with React.
                 </p>
               </div>
               <div class="more-desc">
                 <p class="shell">
-                  Your goal is to guess the word to save the player from getting frozen. 
-                  Fill in the blanks by guessing one letter at a time to see if it’s in the word. 
-                  Type a letter with your keyboard. If you have guessed correctly, the letter will appear in the blank spaces.
+                  An accessible, youth-friendly, and responsive component-based Calculator app made using React.
+                </p>
+                <p class="shell">
+                  The calculator utilizes JavaScript libraries to implement the fastest build-in methods to solve Math.
+                </p>
+                <p class="shell">
+                  This app is accessible, passing the Lighthouse audits and resolving potential security vulnerabilities.  Performance : 99%
                 </p>
               </div>
               <div class="lowLevel">
                 <span
-                  class="gitHubSpan"
-                  id="linkSnowman"
-                  href="https://github.com/PompaDonpa/Command-Line-Snowman"
+                  class="gitHubSpan linkSites"
+                  href="https://github.com/PompaDonpa/Calculator"
                   >GitHub</span
                 >
-                <span class="gitLive">Live site</span>
+                <span class="gitLive linkSites"
+                  href="https://daniel-naranjo-calculator.netlify.app/"
+                  >Live site</span>
               </div>
             </div>
           </section>
@@ -95,37 +115,45 @@
           <br />
 
           <section class="projects-divReverse" style="flex-flow: row-reverse">
-            <div id="snowman-desc" style="grid-area: 1 / 1 / 2 / 7">
-              <div id="snowmanFormMedia">
+            <div id="calculator-desc" style="grid-area: 1 / 1 / 2 / 7">
+              <div id="calculatorFormMedia">
                 <p class="subTitle" style="text-align: left">
                   Featured Project
                 </p>
-                <h2 class="proTitle" style="text-align: left">Trader DOS</h2>
+                <h2 class="proTitle" style="text-align: left">Budget Horizon</h2>
                 <p class="gameText" style="text-align: start">
-                  An adventure shell game, that simulates a broker terminal
+                  A modern Budget app, created with React & Material UI.
                 </p>
               </div>
               <div class="more-desc">
                 <p class="shell">
-                  Your goal is to make as much money as posible by trading equities. Risk management is very important, consider sell part of your portfolio to obtain some cash.
+                  This Single Page Application was bootstraped using React and is connected to a API hosted at Heroku.
+                </p>
+                <p class="shell">
+                  The app uses CRUD functions to manipulate the database in the backend.
+                </p>
+                <p class="shell">
+                  UX / UI was designed using Material-UI. 
                 </p>
               </div>
+
               <div class="lowLevel" style="justify-content: flex-start">
                 <span
-                  class="gitHubSpan"
-                  id="linkTrader"
-                  href="https://github.com/PompaDonpa/Trader-DOS---Text-adventure-game"
+                  class="gitHubSpan linkSites"
+                  href="https://github.com/PompaDonpa/Budget-Horizon-react"
                   >GitHub</span
                 >
-                <span class="gitLive">Live site</span>
+                <span class="gitLive linkSites"
+                      href="https://budget-horizon-dn.netlify.app/"
+                
+                >Live site</span>
               </div>
             </div>
-            <div id="snowmanFormReverse">
+            <div id="calculatorFormReverse">
               <img
-                src="./images/TraderDOS.gif"
-                alt=""
-                class="snowman"
-                id="traderMedia"
+                src="./images/budget.gif"
+                alt="Budget Horizon App"
+                class="calculator"
               />
             </div>
           </section>
@@ -133,34 +161,34 @@
           <br />
           <div style="height: 80px"></div>
           <br />
-
-          <button class="niceButton">
+          <div class="line"></div>
+          <!-- <button class="niceButton">
             <strong id="show">Show Less</strong>
           </button>
 
           <br />
           <div style="height: 80px"></div>
           <br />
-
-          <section id="moreGit">
+   
+          <section id="moreGit" class="more-visible">
             <div class="more">A</div>
             <div class="more">B</div>
             <div class="more">C</div>
             <div class="more">D</div>
           </section>
+ 
         </div>
         <div class="three">
           <div class="line section" id="skill"></div>
         </div>
-      </div>
+      </div> -->
 
       <!--  ===========================================================
           ||                       SKILLS                              ||
             ===========================================================         -->
 
-      <!-- <div class="active"> -->
-        <div class="three" id="skills">
-          <h2 id="skills">Skills</h2>
+        <div class="three section" id="skills-menu">
+          <h2 id="skills" >Skills</h2>
           <label id="category"
             >Choose a category&ensp;&ensp;
             <select name="" id="option-selected">
@@ -172,8 +200,6 @@
         </div>
 
         <div class="three">
-          <!-- <div> -->
-            <!-- <button class="horizontal"></button> -->
             <div id="rolling-menu">
               <img class="icon front-end" src="./images/js.svg" />
               <img class="icon front-end" src="./images/html.svg" />
@@ -183,15 +209,10 @@
               <img class="icon back-end" src="./images/redux.svg" />
               <img class="icon back-end" src="./images/postgre.svg" />
             </div>
-            <!-- <button class="horizontal"></button> -->
-          <!-- </div> -->
         </div>
 
-        <div class="three">
-          <div class="line"></div>
-        </div>
       </div>
-    <!-- </div> -->
+
   </body>
 
   <!--      ===========================================================
@@ -199,7 +220,6 @@
             ===========================================================         -->
 
   <footer id="footer">
-    <!-- <div class='three'> -->
       <h2 class="section" id="contacts">Contact</h2>
       <input
         id="mailMe"
@@ -235,5 +255,4 @@
       />
       <p id="made">made by Daniel Naranjo - 2021</p>
     </div>
-  <!-- </footer> -->
 </html>
