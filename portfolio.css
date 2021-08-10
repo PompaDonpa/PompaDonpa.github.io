@@ -7,24 +7,18 @@ body {
   background: #152d50;
   color: white;
   display: inline;
-
 }
 
-
 #DN {
-
   display: block;
- position: relative;
+  position: relative;
   opacity: 0.35;
   z-index: -1;
   border-radius: 50%;
   width: 250px;
   border-style: solid;
   border-color: transparent;
-  
 }
-
-
 
 #nav {
   width: 100%;
@@ -50,11 +44,10 @@ body {
   display: flex;
   align-self: center;
   font-size: 20px;
- 
 }
 
-.nav:hover{
-  cursor: pointer; 
+.nav:hover {
+  cursor: pointer;
   text-decoration: underline;
 }
 
@@ -72,9 +65,7 @@ h1 {
 .active {
   display: grid;
   grid-template-rows: 140px auto 140px;
-
 }
-
 
 .three {
   display: flex;
@@ -196,7 +187,8 @@ h2 {
   padding: 10px;
 }
 
-.calculator {
+.calculator,
+.budget {
   width: 100%;
   height: 100%;
   align-self: auto;
@@ -208,7 +200,7 @@ h2 {
 .calculator:hover {
   transform: translateY(-10px);
 }
-.shell{
+.shell {
   color: white;
   text-align: center;
   font-weight: 100;
@@ -272,7 +264,7 @@ h2 {
   gap: 40px;
 }
 
-.more-invisible{
+.more-invisible {
   display: none;
 }
 
@@ -287,15 +279,13 @@ h2 {
 .more:not(:hover) {
   background-color: #1122408a;
 }
-.more:hover{
+.more:hover {
   transform: translateY(-10px);
-
 }
 
 #skills {
-transform: translateX(-500px);
+  transform: translateX(-500px);
 }
-
 
 #category {
   align-self: center;
@@ -372,192 +362,153 @@ transform: translateX(-500px);
     ||                      MEDIA QUERIES                        ||
       ===========================================================         */
 
-@media only screen and (max-width: 375px) {
-  body {
-    display: inline;
-    max-width: 375px;
-    padding: 5px 2px 5px 2px;
-  }
-
-  #nav {
-    width: 100%;
-    margin-left: -3px;
-    margin-right: 0px;
-  }
-
-  section{
-    width: 95%;
-  }
-  .navigator {
-    display: flex;
-  }
-
-  .nav {
-    display: none;
-  }
-
-#DN{
-  width: 150px;
-  align-self: flex-start;
-  transform: translateX(75px);
-
-}
-
-  .projects-div {
-    width: 330px;
-  }
-
-  .projects-divReverse {
-    width: 330px;
-  }
-
-  .calculator {
-    transform: translateY(20px);
-    width: 330px;
-    height: 265px;
-  }
-  .more {
-
-    height: 400px;
-  }
-
-  .three {
-    margin: 0px;
-    padding: 14px;
-  }
-
-  .shell {
-    width: 305px;
-    height: 156px;
-  }
-
-  .gameText {
-    font-size: 18px;
-  }
-  .active {
-    display: inline;
-  }
-
-  .three {
-    max-width: 330px;
-    margin-left:15px;
-  }
-
-  .subTitle {
-    padding: 2px 12px 4px 2px;
-    margin-right: 0px;
-  }
-  .proTitle {
-    padding: 2px 12px 4px 2px;
-    margin-right: 0px;
-  }
-  .gameText {
-    padding: 2px 12px 4px 2px;
-    margin-right: 0px;
-  }
-
-  .more-desc {
-    min-width: 325px;
-    min-height: 216px;
-    margin: 20px 0px 10px 10px;
-  }
-
-  .gitLive {
-    min-width: 103.86px;
-    max-height: 61px;
-  }
-
-  .lowLevel {
-    margin: 12px;
-  }
-  .icon {
-    width: 64px;
-    height: 64px;
-  }
-
-  .footer-elem {
-    width: 64px;
-    height: 64px;
-    align-self: center;
-  }
-
-#top{
-  width: 374px;
-  margin: 0px;
-}
-
-  #traderMedia {
-    transform: translateY(-135px);
-  }
-
-  #snowmanForm {
-    min-width: 330px;
-  }
-  #snowmanFormReverse {
-    grid-area: 1 / 1 / 2 / 11;
-  }
-  #snowman-desc {
-    grid-area: 1 / 1 / 2 / 11;
-  }
-
-  #snowmanFormMedia {
-    width: 330px;
-  }
-
-  #moreGit {
-    grid-template-columns: 330px;
-    grid-template-rows: repeat(4, minmax(auto, 400px));
-  }
-
-  #made {
-    font-size: 20px;
-  }
-
-  #contacts {
-    padding: 2px 2px 2px;
-  }
-
-  #divfooter {
-    width: 330px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #rolling-menu {
-    margin-right: 0px;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-}
-
 @media only screen and (max-width: 812px) {
-
-  #top{
+  #top {
     width: 100%;
+    margin: 0;
   }
 
-  .three{
+  .three {
     width: 790px;
   }
 
-  .more{
+  .more {
     width: 330px;
-
   }
-  .icon{
+  .icon {
     width: 56px;
     height: 56px;
   }
 
-  #nav{
+  #nav {
     width: 100%;
     justify-content: space-between;
-     margin-left: 28px;
-  
+    margin-left: 28px;
   }
 
-  .nav{
+  .nav {
     align-self: center;
     margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #nav {
+    display: none;
+  }
+
+  #top {
+    width: 94vw;
+    margin: 0;
+  }
+  body {
+    overflow-x: disabled;
+  }
+
+  body,
+  div,
+  section,
+  img,
+  .three,
+  .section,
+  .projects-div,
+  .calculator,
+  #footer,
+  #contacts {
+    width: 82vw;
+    margin: 0;
+    padding: 6px;
+  }
+  p,
+  .description {
+    font-size: 16px;
+    color: #cfd0c7;
+  }
+
+  #projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .active {
+    display: grid;
+    grid-template-rows: 20px auto 140px;
+  }
+  .projects-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .more-desc,
+  .lowLevel {
+    width: 80vw;
+    margin: 40px 0 20px 0;
+    padding: 0;
+  }
+  #calculatorForm {
+    width: 80vw;
+    z-index: 1;
+  }
+  #calculatorFormReverse,
+  .budget {
+    width: 75vw;
+    display: flex;
+    align-self: flex-start;
+    height: auto;
+    transform: translate(-60px, -40px);
+  }
+  .bdgetMarginTop {
+    margin-top: 60px;
+    transform: translateY(30px);
+  }
+
+  #rolling-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .icon {
+    width: 42px;
+    height: 42px;
+  }
+  #skills {
+    transform: translateX(0px);
+  }
+
+  #category {
+    margin-bottom: 10px;
+  }
+  .line {
+    display: none;
+  }
+  .calculator {
+    width: 75vw;
+  }
+
+  .shell {
+    padding: 0 4px 0 4px;
+  }
+
+  #calculator-desc {
+    grid-area: 1 / 1 / 2 / -1;
+  }
+
+  #top > div.active > div:nth-child(1) {
+    width: 310px;
+    height: 10px;
+  }
+
+  #footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #footer > input {
+    width: 42px;
+    height: 42px;
+  }
+  #footer > p {
+    transform: translateX(50px);
   }
 }
