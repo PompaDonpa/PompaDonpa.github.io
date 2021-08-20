@@ -13,7 +13,7 @@ You'll use these skills to build an MVP of your **personal web site**. This Web 
 
 By the time you are job ready, your personal site will probably use additional technologies and skills we have not covered yet. For now, this project will be an MVP (Minimum Viable Product) that you can continue to enhance during the course.
 
-## Examples
+## Example
 
 This sample project is far from perfect. You do not need to copy any specific feature here. You can and should use your own creativity!
 
